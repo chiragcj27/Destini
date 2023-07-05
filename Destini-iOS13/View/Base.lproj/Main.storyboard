@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Destini_iOS13" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="eAe-Uc-hEd">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="UKv-uh-t9L">
+                                <rect key="frame" x="0.0" y="48" width="414" height="814"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="ETt-Pj-Loe">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="614"/>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7cH-OT-XeP">
+                                        <rect key="frame" x="0.0" y="624" width="414" height="90"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="90" id="Zh4-g8-nZo"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ArialUnicodeMS" family="Arial Unicode MS" pointSize="22"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Button" backgroundImage="choice1Background">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="choice1Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rGK-V0-8EZ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rog-zo-iYr">
+                                        <rect key="frame" x="0.0" y="724" width="414" height="90"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="90" id="Kh2-N9-uAF"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ArialUnicodeMS" family="Arial Unicode MS" pointSize="22"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Button" backgroundImage="choice2Background">
+                                            <color key="titleColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="choice2Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yf1-gL-X13"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="UKv-uh-t9L" secondAttribute="bottom" id="BB3-bo-v5Z"/>
+                            <constraint firstAttribute="bottom" secondItem="eAe-Uc-hEd" secondAttribute="bottom" id="P6T-Me-6Fw"/>
+                            <constraint firstItem="eAe-Uc-hEd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Riv-xf-wkn"/>
+                            <constraint firstItem="eAe-Uc-hEd" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Zk8-MM-b2d"/>
+                            <constraint firstItem="UKv-uh-t9L" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="eTJ-Gt-KsZ"/>
+                            <constraint firstItem="eAe-Uc-hEd" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="fPe-5k-Zkh"/>
+                            <constraint firstItem="UKv-uh-t9L" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="nvV-Ms-U06"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UKv-uh-t9L" secondAttribute="trailing" id="uKk-dn-dGE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="choiceOneButton" destination="7cH-OT-XeP" id="1P5-wc-ct2"/>
+                        <outlet property="choiceTwoButton" destination="Rog-zo-iYr" id="nGu-XU-EsI"/>
+                        <outlet property="situtationLabel" destination="ETt-Pj-Loe" id="ps8-lI-Twk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="958" height="1793"/>
+        <image name="choice1Background" width="1370.5" height="363"/>
+        <image name="choice2Background" width="1370.5" height="363"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
